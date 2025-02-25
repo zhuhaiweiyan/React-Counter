@@ -3,6 +3,7 @@ import Square from "./Square";
 import "./App.css";
 import { GridProvider, useGrid } from "./GridContext";
 
+// I have did the extra credit
 function App() {
   const { activeCount } = useGrid();
 
