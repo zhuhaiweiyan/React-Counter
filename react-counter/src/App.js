@@ -1,9 +1,8 @@
 import React from "react";
 import Square from "./Square";
 import "./App.css";
-import { GridProvider, useGrid } from "./GridContext";
+import { useGrid } from "./GridContext";
 
-// I have did the extra credit
 function App() {
   const { activeCount } = useGrid();
 
@@ -13,17 +12,15 @@ function App() {
   };
 
   return (
-    <GridProvider>
-      <div className="App">
-        <h2>Count: {activeCount}</h2>
-        <div style={gridStyle}>
-          <Square />
-          <Square />
-          <Square />
-          <Square />
-        </div>
+    <div className="App">
+      <h2>Count: {activeCount}</h2>
+      <div style={gridStyle}>
+        <Square />
+        <Square />
+        <Square />
+        <Square />
       </div>
-    </GridProvider>
+    </div>
   );
 }
 

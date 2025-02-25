@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useGrid } from "./GridContext";
 
-const Square = ({ onToggle }) => {
-  // Tracks whether the square is active (black) or inactive (white)
+// Tracks whether the square is active (black) or inactive (white)
+const Square = () => {
   const [isActive, setIsActive] = useState(false);
   const { toggleSquare } = useGrid();
 
